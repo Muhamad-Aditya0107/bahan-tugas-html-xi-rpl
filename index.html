@@ -4,26 +4,155 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Index</title>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url("background.jpg");
+        background-size: cover;
+        background-position: center;
+        color: white;
+    }
+
+    .hitam {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        opacity:0.4;
+        z-index: 1;
+    }
+
+    .putih >*{
+        position: relative;
+        z-index: 2;
+        color: #ffffff;
+    }
+
+    .Judul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 100px;
+    }
+
+    .section-2 {
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 100px 0 100px;
+        border-radius: 15px;
+
+    }
+
+    .about {
+        height: 30vh;
+        width: 40vw;
+        display: grid;
+        justify-content:center;
+        align-items: center;
+        margin-right: 10px;
+        background-color:#113e5c;
+        border-radius: 15px;
+
+    }
+
+    .about p {
+        padding-bottom: 15vh;
+    }
+
+    .benefit ul {
+        padding-bottom: 10vh;
+    }
+
+    .benefit {
+        height: 30vh;
+        width: 40vw;
+        display: grid;
+        justify-content:center;
+        align-items: center;
+        margin-left: 10px;
+        background-color:#113e5c;
+        border-radius: 15px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .daftar {
+        height: 40vh;
+        width: 79vw;
+        background-color:#113e5c;
+        display: grid;
+        align-items: center;
+        margin: 10px 0 10px 0;
+        border-radius:15px ;
+        padding:20px ;
+        
+    }
+
+    .daftar h3 {
+        font-size: 50px;
+    }
+
+    .daftar ol {
+        font-size:20px ;
+        margin: 20px;
+        text-decoration: none;
+    }
+
+    .daftar ol li a {
+        text-decoration: none;
+        color: blue;
+    }
+
+    .daftar ol li a:hover {
+        color: black;
+    }
+  </style>
 </head>
 <body>
-    <h1>Media Online</h1>
-
-    <h2>Sosial Media Developer</h2>
-    <p>Belajar dan berbagi agar hidup menjadi lebih baik</p>
-
-    <h3>Benefit Join di Media Online</h3>
-    <ul>
-        <li>Mendapatkan motivasi dari sesama para Developer</li>
-        <li>Sharing knowledge</li>
-        <li>Dibuat oleh calon web developer terbaik</li>
-    </ul>
-
-    <h3>Cara Bergabung ke Media Online</h3>
-    <ol>
-        <li>Mengunjungi Website ini</li>
-        <li>Mendaftarkan di <a href="form.html">Form Sign Up</a></li>
-        <li>Selesai</li>
-    </ol>
+    <div class="hitam"></div>
+    <div class="putih">
+        <h1 class="Judul">Media Online</h1>
+        
+    
+        <div class="section-2">
+            <div class="about">
+                <h2>Sosial Media Developer</h2>
+                <p>Belajar dan berbagi agar hidup menjadi lebih baik</p>
+            </div>
+            <div class="benefit">
+                <h2>Benefit Join di Media Online</h2>
+                <ul>
+                    <li>Mendapatkan motivasi dari sesama para Developer</li>
+                    <li>Sharing knowledge</li>
+                    <li>Dibuat oleh calon web developer terbaik</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="container">x
+            <div class="daftar">
+                <h3>Cara Bergabung ke Media Online</h3>
+                <ol>
+                    <li>Mengunjungi Website ini</li>
+                    <li>Mendaftarkan di <a href="form.html">Form Sign Up</a></li>
+                    <li>Selesai</li>
+                </ol>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
