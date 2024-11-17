@@ -4,47 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
 </head>
-<body>
+<body class="bg-dark">
+    <div class="container-sm my-5 p-3 text-primary-emphasis border border-primary rounded-3 ">
+        <!-- JUDUL -->
+        
+        <h1 class="text-info text-center">Buat Account Baru</h1>
+        <h3 class="text-info text-center mb-5">Sign Up Form</h3>
+        
+        <!-- CONTENT -->
+        <form action="welcome.html" class="text-info">
+            <!-- NAMA -->
+             <div class="row g-3 mb-4 was-validated">
+                 <div class="form-floating mb-3 col-md-6">
+                     <input type="text" class="form-control" id="floatingInput" placeholder="name" required>
+                     <label for="floatingInput" class="text-black">First Name</label>
+                 </div>
+     
+                 <div class="form-floating col-md-6">
+                     <input type="text" class="form-control is-valid" id="floatingInput validationServer02" placeholder="name" required>
+                     <label for="floatingInput validationServer02" class="text-black">Last Name</label>
+                 </div>
+             </div>
 
-    <h1>Buat Account Baru</h1>
+            <!-- GENDER -->
+            <div>Gender</div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault radio-stacked" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">Male</label>
+            </div>
+            <div class="form-check mb-4">
+                <input class="form-check-input" type="radio" name="flexRadioDefault radio-stacked" id="flexRadioDefault2 validationFormCheck2">
+                <label class="form-check-label" for="flexRadioDefault2 validationFormCheck2">Female</label>
+            </div>
+    
+            <!-- NEGARA -->
 
-    <h3>Sign Up Form</h3>
+            <label for="nationality" class="form-label">Nationality</label>
+            <select class="form-select mb-4" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="indonesia">Indonesia</option>
+                <option value="malaysia">Malaysia</option>
+                <option value="singapore">Singapore</option>
+                <option value="other">Other</option>
+            </select>
+    
+            <!-- BAHASA -->
+            <p>Language Spoken</p>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Bahasa Indonesia
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Malaysia
+                </label>
+            </div>
+            <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    English
+                </label>
+            </div>
+    
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Bio</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+    
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
 
-    <form action="welcome.html">
-        <label for="first_name">First name :</label><br>
-        <input type="text" id="first_name" name="first_name"><br><br>
+    
+    
 
-        <label for="last_name">Last name :</label><br>
-        <input type="text" id="last_name" name="last_name"><br><br>
 
-        <p>Gender</p>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label><br>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label><br><br>
-
-        <label for="nationality">Nationality</label><br>
-        <select id="nationality" name="nationality">
-            <option value="indonesia">Indonesia</option>
-            <option value="malaysia">Malaysia</option>
-            <option value="singapore">Singapore</option>
-            <option value="other">Other</option>
-        </select><br><br>
-
-        <p>Language Spoken</p>
-        <input type="checkbox" id="bahasa_indonesia" name="language" value="bahasa_indonesia">
-        <label for="bahasa_indonesia">Bahasa Indonesia</label><br>
-        <input type="checkbox" id="english" name="language" value="english">
-        <label for="english">English</label><br>
-        <input type="checkbox" id="other" name="language" value="other">
-        <label for="other">Other</label><br><br>
-
-        <label for="bio">Bio</label><br>
-        <textarea id="bio" name="bio" rows="5" cols="40"></textarea><br><br>
-
-        <input type="submit" value="Sign Up">
-    </form>
-
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
